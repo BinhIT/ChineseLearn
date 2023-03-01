@@ -86,6 +86,21 @@
     }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1265px) {
+
+
+    .start-content h1 {
+        font-size: 40px;
+    }
+
+    .start-content p {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+
+
+}
+
 /* tablet */
 @media screen and (max-width: 1024px) {
     .hero-col1 h1 {
@@ -115,17 +130,8 @@
 
     }
 
-
     .start-img img {
         width: 85%;
-    }
-
-    .start-content h1 {
-        font-size: 25px;
-    }
-
-    .start-content p {
-        font-size: 15px;
     }
 
     .hero-col2 img {
@@ -159,10 +165,6 @@
 
     .start-content h1 {
         font-size: 25px;
-    }
-
-    .start-content p {
-        font-size: 15px;
     }
 
     .hero-col2 img {
