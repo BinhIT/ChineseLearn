@@ -1,3 +1,18 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    ;
+}
+
+.wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     overflow: hidden;
     box-shadow: 0px 2px 20px var(--clr-gray-light);

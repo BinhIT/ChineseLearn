@@ -52,7 +52,7 @@
 /* innovative-section */
 .innovative-section {
     margin-top: 5%;
-    background-color: var(--clr-primary);
+    background-color: #0066FF;
     text-align: center;
     border-radius: 25px;
 }
@@ -64,7 +64,6 @@
 }
 
 .innovative-content {
-    line-height: 4em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -72,13 +71,8 @@
     color: #ffffff;
 }
 
-.innovative-content h1 {
-    font-size: 40px;
-}
-
 .innovative-content h4 {
     font-weight: 300;
-    font-size: 30px;
 }
 
 .innovative-img img {

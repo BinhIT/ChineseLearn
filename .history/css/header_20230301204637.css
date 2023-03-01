@@ -47,6 +47,17 @@ a:hover {
 }
 
 
+
+.btn {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
 /* Blue */
 .info {
     background-color: #0066FF;

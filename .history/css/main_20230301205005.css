@@ -1,0 +1,39 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-primary: #0066FF;
+    ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 85%;
+    padding: auto;
+    margin: auto;
+}
+
+.wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.call-action-wrapper {
+    background-color: var(--clr-primary);
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,3 +1,20 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    --clr-popular: #ef257a;
+    --clr-technology: #651fff;
+    --clr-psychology: #e85808;
+}
+
+.wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     overflow: hidden;
     box-shadow: 0px 2px 20px var(--clr-gray-light);
@@ -40,7 +57,6 @@
 .blog-description {
     color: var(--clr-gray-med);
     font-size: 0.9rem;
-    text-align: left;
 }
 
 .card-profile {
@@ -69,7 +85,7 @@
     font-size: 0.9rem;
 }
 
-.stories-section h1 {
+.stories-section {
     padding-top: 2%;
     text-align: center;
 }
