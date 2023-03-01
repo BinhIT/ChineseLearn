@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 85%;
+    width: 90%;
     padding: auto;
     margin: auto;
 }
@@ -26,6 +26,7 @@ body {
 
 nav {
     height: 65px;
+    width: 90%;
     margin: 0 auto;
     background: #ffffff;
     border-bottom: 2px solid #B3B3B3;

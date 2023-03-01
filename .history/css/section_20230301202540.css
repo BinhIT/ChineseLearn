@@ -20,7 +20,10 @@
 }
 
 .flex-container {
+    padding-top: 2%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn_hero {
@@ -81,9 +84,6 @@
 
 /* reponsive section */
 @media screen and (max-width: 1265px) {
-    .flex-container {
-        flex-wrap: wrap;
-    }
 
     .innovative-img img {
         max-width: 90%;

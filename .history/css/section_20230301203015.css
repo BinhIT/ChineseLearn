@@ -1,9 +1,4 @@
 /* section hero */
-.row {
-
-    margin: auto;
-    padding: auto;
-}
 
 .hero-section {
     padding-top: 5%;
@@ -20,7 +15,10 @@
 }
 
 .flex-container {
+    padding-top: 2%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn_hero {
@@ -31,7 +29,8 @@
 }
 
 /* Start section */
-.start-section {
+.col {
+    width: 90%;
     margin-top: 5%;
 }
 
@@ -81,9 +80,6 @@
 
 /* reponsive section */
 @media screen and (max-width: 1265px) {
-    .flex-container {
-        flex-wrap: wrap;
-    }
 
     .innovative-img img {
         max-width: 90%;

@@ -1,0 +1,86 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    --clr-popular: #ef257a;
+    --clr-technology: #651fff;
+    --clr-psychology: #e85808;
+}
+
+.wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray-light);
+    background: white;
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--clr-gray-light);
+}
+
+.icon-img {
+    padding-top: 2%;
+    height: 2rem;
+    width: 14%;
+}
+
+
+.card-body {
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--clr-link);
+}
+
+.blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.blog-description {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+}
+
+.card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-profile-info {
+    margin-left: 1rem;
+}
+
+.profile-name {
+    font-size: 1rem;
+}
+
+.profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+}
