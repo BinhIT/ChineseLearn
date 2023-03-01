@@ -59,14 +59,11 @@
 .innovative-section {
     margin-top: 5%;
     background-color: #0066FF;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.innovative-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .innovative-content {
@@ -82,7 +79,8 @@
 }
 
 .innovative-img img {
-    padding-top: 2%;
+    display: contents;
+    text-align: center;
 }
 
 /* reponsive section */
@@ -90,12 +88,6 @@
     .flex-container {
         flex-wrap: wrap;
     }
-
-    .innovative-img img {
-        max-width: 90%;
-    }
-
-
 }
 
 /* tablet */
@@ -108,10 +100,6 @@
     .hero-col1 h4 {
         font-size: 30px;
 
-    }
-
-    .innovative-img img {
-        max-width: 90%;
     }
 }
 

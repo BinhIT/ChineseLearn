@@ -83,6 +83,7 @@
 
 .innovative-img img {
     padding-top: 2%;
+    justify-content: center;
 }
 
 /* reponsive section */
@@ -90,12 +91,6 @@
     .flex-container {
         flex-wrap: wrap;
     }
-
-    .innovative-img img {
-        max-width: 90%;
-    }
-
-
 }
 
 /* tablet */
@@ -108,10 +103,6 @@
     .hero-col1 h4 {
         font-size: 30px;
 
-    }
-
-    .innovative-img img {
-        max-width: 90%;
     }
 }
 

@@ -57,6 +57,7 @@
 
 /* innovative-section */
 .innovative-section {
+    width: 90%;
     margin-top: 5%;
     background-color: #0066FF;
     text-align: center;
@@ -89,10 +90,6 @@
 @media screen and (max-width: 1265px) {
     .flex-container {
         flex-wrap: wrap;
-    }
-
-    .innovative-img img {
-        max-width: 90%;
     }
 
 

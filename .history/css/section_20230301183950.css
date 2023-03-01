@@ -92,10 +92,8 @@
     }
 
     .innovative-img img {
-        max-width: 90%;
+        width: 90%;
     }
-
-
 }
 
 /* tablet */
@@ -108,10 +106,6 @@
     .hero-col1 h4 {
         font-size: 30px;
 
-    }
-
-    .innovative-img img {
-        max-width: 90%;
     }
 }
 

@@ -63,12 +63,6 @@
     border-radius: 25px;
 }
 
-.innovative-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .innovative-content {
     display: block;
     margin-left: auto;
@@ -82,7 +76,7 @@
 }
 
 .innovative-img img {
-    padding-top: 2%;
+    text-align: center;
 }
 
 /* reponsive section */
@@ -90,12 +84,6 @@
     .flex-container {
         flex-wrap: wrap;
     }
-
-    .innovative-img img {
-        max-width: 90%;
-    }
-
-
 }
 
 /* tablet */
@@ -108,10 +96,6 @@
     .hero-col1 h4 {
         font-size: 30px;
 
-    }
-
-    .innovative-img img {
-        max-width: 90%;
     }
 }
 
