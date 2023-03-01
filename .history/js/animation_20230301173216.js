@@ -1,0 +1,1 @@
+const innovative_img = document.querySelectorAll('.innovative-img')

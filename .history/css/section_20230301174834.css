@@ -1,0 +1,116 @@
+/* section hero */
+.row {
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.hero-row {
+    display: flex;
+}
+
+.hero-col1 {
+    padding-top: 4%;
+    line-height: 5em;
+}
+
+.hero-col1 h1 {
+    font-size: 45px;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.btn_hero {
+    background-color: #0066FF;
+    border-color: #2196F3;
+    color: rgb(255, 255, 255);
+    padding: 10px 35px;
+}
+
+/* reponsive section */
+/* reponsive section */
+@media only screen and (min-width: 1025px) and (max-width: 1265px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .start-content h1 {
+        font-size: 40px;
+    }
+
+    .start-content p {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .hero-col1 h1 {
+        font-size: 50px;
+
+    }
+
+    .hero-col1 h4 {
+        font-size: 30px;
+
+    }
+}
+
+/* Mobile */
+@media only screen and (min-width: 595px) and (max-width:765px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .hero-col1 {
+        line-height: 4em;
+    }
+
+    .hero-col1 h1 {
+        font-size: 50px;
+
+    }
+
+    .hero-col1 h4 {
+        font-size: 30px;
+
+    }
+
+    .hero-col2 img {
+        padding: 12% 10%;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width:594px) {
+    .hero-col1 {
+        line-height: 3em;
+    }
+
+    .hero-col2 img {
+        padding: 5% 5%;
+    }
+
+    .hero-col1 h1 {
+        font-size: 35px;
+    }
+
+    .hero-col1 h4 {
+        font-size: 19px;
+
+    }
+}

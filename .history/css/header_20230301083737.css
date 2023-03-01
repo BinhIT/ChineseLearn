@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#menu_header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    height: 65px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-bottom: 2px solid #B3B3B3;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border: 1px solid #000000;
+    transition: .5s;
+}
+
+nav #icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_header {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+/* Blue */
+.info {
+    background-color: #0066FF;
+    border-color: #2196F3;
+    color: rgb(255, 255, 255);
+}
+
+.info:hover {
+    background: #0066FF;
+    color: white;
+}
+
+/* Gray */
+.default {
+    border-color: #e7e7e7;
+    color: black;
+}
+
+.default:hover {
+    background: #e7e7e7;
+}
+
+/* logo */
+.logo_mobile {
+    display: none;
+}
+
+#menu_header .icon_nav {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+@media(max-width:360px) {
+    .logo_mobile {
+        display: block;
+    }
+
+    .logo_main {
+        display: none;
+    }
+
+    nav {
+        width: 95%;
+    }
+
+    #menu_header .icon_nav {
+        display: block;
+        width: 30%;
+    }
+
+    #menu_btn {
+        display: block;
+        float: right;
+    }
+
+    #menu_btn .default {
+        display: none;
+    }
+
+    #menu_header #menu_link {
+        display: none;
+    }
+
+    .btn_header {
+        font-size: 5px;
+        padding: 8px 25px;
+    }
+}
+
+@media(max-width:768px) {
+    nav #icon {
+        display: block;
+    }
+
+    .logo_mobile {
+        display: block;
+        width: 15%;
+    }
+
+    .logo_main {
+        display: none;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    a.active,
+    a:hover {
+        border: none;
+        color: #3498db;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+
+    .btn_header {
+        font-size: 8px;
+    }
+}
+
+section {
+    background: url(/img/fondo-header.jpg)no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}

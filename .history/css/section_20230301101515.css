@@ -1,0 +1,25 @@
+/* section hero */
+.row {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.hero-col1 {
+    padding-top: 4%;
+    line-height: 5em;
+}
+
+.hero-col1 h1 {
+    font-size: 55px;
+
+}
+
+/* reponsive section */
