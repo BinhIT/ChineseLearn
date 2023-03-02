@@ -1,0 +1,74 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-primary: #0066FF;
+    ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url(header.css);
+@import url(./section.css);
+@import url(./stories_card.css);
+@import url(./4step.css);
+@import url(./QA.css);
+@import url(./footer.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+    padding: auto;
+    margin: auto;
+}
+
+.wrapper {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.btn_defaut {
+    background-color: #fff;
+    padding: 15px 45px;
+    font-weight: 700;
+    color: #000;
+
+}
+
+.call-action-wrapper {
+    color: #ffff;
+    text-align: center;
+    line-height: 4em;
+    background-color: var(--clr-primary);
+    flex-direction: column;
+    height: 14em;
+    border-radius: 25px;
+
+}
+
+.call-action-wrapper h1 {
+    font-size: 40px;
+}
+
+.call-action-wrapper h3 {
+    font-size: 30px;
+    font-weight: 400;
+}

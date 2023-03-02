@@ -1,0 +1,442 @@
+.footer-container {
+    background-color: var(--clr-blue);
+    padding: 2rem 0;
+    margin-top: 2em;
+}
+
+.footer {
+    width: 80%;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+
+.footer-heading p {
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.logo_footer {
+    width: 65%;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a {
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+/* .footer-heading a:hover {
+    color: #ae5fce;
+    transition: 0.3s ease-out;
+} */
+
+.subcribe-form {
+    margin: 0 auto;
+    max-width: 550px;
+    position: relative;
+}
+
+.search-icon {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+
+.subcribe-formbutton {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    color: #2E4453;
+    line-height: 18px;
+    padding: 8px 32px;
+    background: #F3F6F8;
+    border-color: #C8D7E1;
+    box-shadow: 0 1px 0 0 #C8D7E1;
+}
+
+.subcribe-forminput {
+    font-size: 18px;
+    width: 100%;
+    padding: 13px 16px 12px 48px;
+    transition: all 0.15s ease-in-out;
+}
+
+.search-example {
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 600px;
+}
+
+.search-example-info {
+    display: inline-block;
+    max-width: 49%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+
+.search-example-info p {
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+a {
+    color: $blue-medium;
+}
+}
+
+.example-browser {
+    display: inline-block;
+    max-width: 49%;
+}
+}
+
+.search-results {
+    margin: 32px auto;
+    max-width: 550px;
+
+    &.is-hidden {
+        display: none;
+    }
+
+    h3 {
+        margin: 0 0 12px 16px;
+        font-weight: 600;
+        color: darken($gray, 20);
+    }
+
+    .card {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            background: rgba(#fff, 0.5);
+            box-shadow: 0 0 0 1px $blue-medium;
+            position: relative;
+            z-index: 1;
+        }
+
+        &.map-it {
+            margin-top: 24px;
+            background: $gray-light;
+
+            h2 {
+                font-weight: 600;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 15px;
+
+        .search-domain {
+            color: darken($gray, 10);
+        }
+
+        .search-tld {
+            color: $gray-dark;
+        }
+    }
+
+    .result-price {
+        position: absolute;
+        top: 18px;
+        right: 48px;
+        color: $blue-medium;
+
+        &.free {}
+
+        &.upgrade {}
+
+        &.map {
+            right: 24px;
+            font-size: 13px;
+            color: $blue-dark;
+        }
+    }
+
+    .result-chevron {
+        height: 24px;
+        width: 24px;
+        fill: darken($gray, 10);
+        position: absolute;
+        top: 14px;
+        right: 16px;
+    }
+
+    &.is-loading {
+        .card {
+            pointer-events: none;
+
+            &.map-it {
+                display: none;
+            }
+        }
+
+        .badge {
+            display: none;
+        }
+
+        h2 .search-domain,
+        h2 .search-tld,
+        .result-price {
+            max-width: 45%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: lighten($gray, 30) !important;
+            color: lighten($gray, 30) !important;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .result-chevron {
+            opacity: 0.1;
+        }
+    }
+}
+
+
+// Email Setup
+.card.setup-email {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.email-address {
+    position: relative;
+    margin-bottom: 24px;
+
+    .email-address-input {
+        width: 100%;
+        padding: 12px 12px;
+    }
+
+    .email-address-domain {
+        background: $gray-light;
+        box-sizing: border-box;
+        border-left: 1px solid #C8D7E1;
+        color: $gray;
+        padding: 0 24px 0 12px;
+        font-size: 14px;
+        line-height: 40px;
+        margin: 0;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+
+        .search-domain {
+            color: darken($gray, 30);
+        }
+
+        .search-tld {
+            color: darken($gray, 10);
+        }
+    }
+}
+
+.email-first-name {
+    display: inline-block;
+    width: 180px;
+    padding-right: 24px;
+}
+
+.email-last-name {
+    display: inline-block;
+    width: 241px;
+}
+
+.name-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: darken($gray, 30);
+    margin: 0 0 6px 0;
+}
+
+.name-input {
+    width: 100%;
+}
+
+.email-footer {
+    text-align: right;
+    position: relative;
+    min-height: 44px;
+    margin-top: 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-top: 1px solid lighten($gray, 30);
+}
+
+.email-partner-logo {
+    position: absolute;
+    bottom: 4px;
+    left: 24px;
+}
+
+.email-price {
+    display: inline;
+    color: $alert-green;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+// Mapping
+.card.setup-mapping {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: right;
+
+    .mapping-url {
+        width: 100%;
+        padding: 12px 12px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    .mapping-submit {}
+}
+
+
+// Plans
+.plans {
+    max-width: 550px;
+    margin: 0 auto;
+
+    .card.plan {
+        position: relative;
+        padding-right: 160px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(#fff, 0.5);
+            box-shadow: 0 0 0 1px $blue-medium;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.plan-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray-dark;
+    margin-bottom: 6px;
+}
+
+.plan-price {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    margin-top: -9px;
+    color: $blue-medium;
+}
+
+.plan-description {
+    line-height: 1.4;
+    font-size: 14px;
+    color: darken($gray, 20);
+}
+
+.plan-chevron {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -12px;
+    fill: darken($gray, 10);
+}
+
+
+// Generic Calypso Styles
+button {
+    outline: none;
+    padding: 8px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2E4453;
+    letter-spacing: 0px;
+    line-height: 18px;
+    background: #F3F6F8;
+    border: 1px solid #C8D7E1;
+    box-shadow: 0 1px 0 0 #C8D7E1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+strong {
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #C8D7E1;
+    font-size: 15px;
+    padding: 8px 12px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 0 0 1px lighten($gray, 20);
+    padding: 18px 24px;
+}
+
+.badge {
+    display: inline;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 5px;
+    border-radius: 3px;
+    position: relative;
+    top: -1px;
+    left: -8px;
+
+    &.unavailable {
+        background: $orange-fire;
+    }
+
+    &.new {
+        background: $alert-green;
+    }
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,13 @@
+.qa-container .col {
+    width: 50%;
+}
+
+.qa-img img {
+    max-width: 80%;
+    height: auto;
+}
+
+.div-question {
+    border-bottom: 2px solid var(--clr-gray-med);
+    line-height: 3em;
+}

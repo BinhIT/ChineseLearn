@@ -1,0 +1,7 @@
+.qa-container {
+    flex-direction: row;
+}
+
+.qa-img {
+    width: 85%px;
+}

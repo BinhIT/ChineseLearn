@@ -1,0 +1,8 @@
+.qa-container div {
+    width: 50%;
+}
+
+.qa-img img {
+    float: right;
+    width: 75%;
+}

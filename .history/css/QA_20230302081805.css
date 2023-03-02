@@ -1,0 +1,8 @@
+.qa-container div {
+    width: 50%;
+}
+
+.qa-img img {
+    max-width: 80%;
+    height: auto;
+}

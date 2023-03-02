@@ -1,0 +1,8 @@
+.qa-container {
+    flex-direction: row;
+}
+
+.qa-img,
+.qa-content {
+    width: 200px;
+}
