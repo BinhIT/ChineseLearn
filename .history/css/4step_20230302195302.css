@@ -1,0 +1,70 @@
+.card-steps {
+    width: calc(39.33333% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    background-color: rgb(244, 249, 252);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    box-shadow: 0 0 3px var(--clr-gray-med);
+}
+
+
+.card-steps-content {
+    padding-top: 15%;
+    flex: 1 0 auto;
+    width: 100%;
+
+}
+
+.card-steps-content * {
+    padding: 10px
+}
+
+.card-steps-action {
+    flex: 0 0 auto;
+    align-self: flex-end;
+    width: 100%;
+    height: 4em;
+}
+
+.card-steps-action * {
+    padding: 10px;
+}
+
+.step-number {
+    background-color: #D1E1F8;
+    text-align: center;
+    color: var(--clr-primary);
+    border-radius: 100%;
+    font-size: 20px;
+    margin: 5% 5%;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+
+    .card-steps {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .card-steps-image {
+        height: auto;
+        flex: 1 0;
+    }
+
+    .card-steps-content {
+        flex: 2 0;
+    }
+
+    .card-steps-action {
+        flex: 1 0 100%;
+    }
+}

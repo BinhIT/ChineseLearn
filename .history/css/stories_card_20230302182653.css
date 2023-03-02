@@ -1,0 +1,135 @@
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray-light);
+    background: white;
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--clr-gray-light);
+}
+
+.icon-img {
+    padding-top: 2%;
+    height: 2rem;
+    width: 14%;
+}
+
+
+.card-body {
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--clr-link);
+}
+
+.blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.blog-description {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-profile-info {
+    margin-left: 1rem;
+}
+
+.profile-name {
+    font-size: 1rem;
+}
+
+.profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+}
+
+.stories-section h1 {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.btn-group button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin: 0 15px;
+}
+
+.btn-group button path {
+    fill: #ccc;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+button:hover path {
+    fill: #333;
+}
+
+/* ---slider animation */
+
+/*  go to left after button click*/
+[data-status='moveLeft'],
+[data-status='moveRight'],
+[data-status='center'] {
+    transition: transform 500ms cubic-bezier(.24, .8, .26, .81);
+}
+
+[data-status='moveLeft'] {
+    transform: translate(-300px, 100px) scale(0);
+}
+
+/*  set position on the left to be shown*/
+[data-status='comeFromLeft'] {
+    transform: translate(-300px, 100px) scale(0)
+}
+
+/*  go to right after button click*/
+[data-status='moveRight'] {
+    transform: translate(300px, 100px) scale(0);
+}
+
+/* set position on the right to get shown */
+[data-status='comeFromRight'] {
+    transform: translate(300px, 100px) scale(0);
+}
+
+[data-status='center'] {
+    transform: translate(0, 0) scale(1);
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .card {
+        display: none;
+    }
+}
